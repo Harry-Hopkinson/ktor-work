@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+    font-weight: bolder;
+}
+
+ul, ol {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
