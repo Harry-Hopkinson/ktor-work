@@ -7,7 +7,8 @@ import io.ktor.server.routing.*
 fun Application.configureRouting() {
     routing {
         get("/") {
-            // Write code to generate a response here
+            val random_roll = DieRoll(6);
+            call.respond(random_roll);
         }
     }
 }
