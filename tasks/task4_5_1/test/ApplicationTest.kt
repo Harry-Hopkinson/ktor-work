@@ -10,15 +10,24 @@ import io.ktor.server.testing.testApplication
 
 @Suppress("Unused")
 class ApplicationTest : FreeSpec({
-    "Path / yields 'Hello World!' greeting" {
+    "Path / yields 'Hello!' greeting" {
         testApplication {
             configure()
             val response = client.get("/")
             response.status shouldBe HttpStatusCode.OK
             response.headers["Content-Type"]?.shouldContain("text/plain")
-            response.bodyAsText() shouldBe "Hello World!"
+            response.bodyAsText() shouldBe "Hello!"
         }
     }
 
     // Add more tests here
+    "Path /hello/Harry yields 'Hello Harry!' greeting" {
+        testApplication {
+            configure()
+            val response = client.get("/hello/Harry")
+            response.status shouldBe HttpStatusCode.OK
+            response.headers["Content-Type"]?.shouldContain("text/plain")
+            response.bodyAsText() shouldBe "Hello Harry!"
+        }
+    }
 })
