@@ -1,11 +1,11 @@
-{# Task 4.7 #}
+{# Task 4.8: organizing routes #}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.green.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fuchsia.min.css">
   <title>{% block title %}Dice Roller{% endblock %}</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 </main>
 
 <footer class="container">
-  <small><i>Task 4.7, Ktor Web Development Guide</i></small>
+  <small><i>Task 4.8, Ktor Web Development Guide</i></small>
 </footer>
 </body>
 </html>
